@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dalmas Otieno Owino — Data Scientist</title>
+<meta name="description" content="Portfolio of Dalmas Otieno Owino, Data Scientist specializing in Python, PySpark, SQL, Machine Learning and Tableau visualization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== PIPELINE NAV ===================== -->
+<nav class="pipeline-nav" id="pipelineNav">
+  <div class="pipeline-nav__inner">
+    <a href="#top" class="pipeline-nav__logo">DOO<span class="cursor-blink">_</span></a>
+    <ul class="pipeline-nav__stages">
+      <li><a href="#extract" data-stage="extract"><span class="stage-num">01</span>EXTRACT</a></li>
+      <li><a href="#transform" data-stage="transform"><span class="stage-num">02</span>TRANSFORM</a></li>
+      <li><a href="#load" data-stage="load"><span class="stage-num">03</span>LOAD</a></li>
+      <li><a href="#visualize" data-stage="visualize"><span class="stage-num">04</span>VISUALIZE</a></li>
+      <li><a href="#connect" data-stage="connect"><span class="stage-num">05</span>CONNECT</a></li>
+    </ul>
+    <div class="pipeline-nav__status">
+      <span class="status-dot"></span> PIPELINE: RUNNING
+    </div>
+  </div>
+  <div class="pipeline-nav__progress" id="pipelineProgress"></div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="terminal" role="img" aria-label="Terminal running a query to introduce Dalmas Otieno Owino">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span>
+        <span class="dot dot--yellow"></span>
+        <span class="dot dot--green"></span>
+        <span class="terminal__title">dalmas@portfolio: ~/profile</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line">
+          <span class="prompt">$</span>
+          <span id="typedQuery" class="typed"></span><span class="cursor-blink">_</span>
+        </p>
+        <div id="queryResult" class="query-result">
+          <p class="result-row result-header">name&nbsp;&nbsp;&nbsp;|&nbsp;role&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;status</p>
+          <p class="result-row">------------------+------------------+--------</p>
+          <p class="result-row">
+            <span class="highlight">Dalmas Otieno Owino</span> | Data Scientist   | <span class="ok">AVAILABLE</span>
+          </p>
+          <p class="result-row muted">1 row returned · runtime 0.042s</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__copy">
+      <p class="eyebrow">// building signal out of noisy data</p>
+      <h1 class="hero__title">Data Scientist turning raw data<br> into decisions that hold up.</h1>
+      <p class="hero__subtitle">Python · PySpark · SQL · Machine Learning · Tableau — with an ICT foundation underneath it all.</p>
+      <div class="hero__cta">
+        <a href="#load" class="btn btn--primary">View projects</a>
+        <a href="#connect" class="btn btn--ghost">Run contact query →</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== 01 EXTRACT / ABOUT ===================== -->
+  <section class="section" id="extract">
+    <div class="section__inner section__inner--split">
+      <div class="about-photo">
+        <figure class="photo-frame">
+          <img src="profile.png" alt="Portrait of Dalmas Otieno Owino" loading="lazy">
+          <figcaption><span class="prompt">$</span> file profile.png <span class="ok">→ loaded</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="about-content">
+        <span class="stage-tag">01 · EXTRACT</span>
+        <h2>Pulling the source data.</h2>
+        <p class="section__lede">Where the profile comes from — background, focus, and how I got into data.</p>
+        <p>
+          I'm Dalmas Otieno Owino, a data scientist with a background in ICT. That combination means
+          I don't just build models — I understand the systems, infrastructure, and pipelines those
+          models have to live in. I care about data that's clean, reproducible, and usable by the
+          people who actually have to make decisions from it.
+          <!-- EDIT ME: replace/extend this paragraph with your real bio, years of experience, industries worked in, etc. -->
+        </p>
+        <p>
+          My work spans the full path from raw data to insight: extracting and processing large
+          datasets, engineering features, building and validating machine learning models, and
+          packaging results into visualizations that non-technical stakeholders can actually use.
+          <!-- EDIT ME -->
+        </p>
+
+        <div class="fact-table" aria-label="Quick facts">
+          <div class="fact-row"><span class="fact-key">role</span><span class="fact-val">Data Scientist</span></div>
+          <div class="fact-row"><span class="fact-key">background</span><span class="fact-val">ICT</span></div>
+          <div class="fact-row"><span class="fact-key">location</span><span class="fact-val">Kenya <!-- EDIT ME --></span></div>
+          <div class="fact-row"><span class="fact-key">focus</span><span class="fact-val">ML · Data Engineering · Analytics</span></div>
+          <div class="fact-row"><span class="fact-key">status</span><span class="fact-val ok">open to opportunities</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 02 TRANSFORM / SKILLS ===================== -->
+  <section class="section section--alt" id="transform">
+    <div class="section__inner">
+      <div class="section__head">
+        <span class="stage-tag">02 · TRANSFORM</span>
+        <h2>Shaping raw skills into working tools.</h2>
+        <p class="section__lede">df.describe() — a quick summary of the core stack.</p>
+      </div>
+
+      <div class="skills-table" role="table" aria-label="Skills and proficiency">
+        <div class="skills-table__head" role="row">
+          <span role="columnheader">skill</span>
+          <span role="columnheader">category</span>
+          <span role="columnheader">proficiency</span>
+        </div>
+
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">Python</span>
+          <span class="skill-cat" role="cell">Core Language</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:92%"></span><em>92%</em></span>
+        </div>
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">SQL</span>
+          <span class="skill-cat" role="cell">Data Querying</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:90%"></span><em>90%</em></span>
+        </div>
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">PySpark</span>
+          <span class="skill-cat" role="cell">Big Data / Distributed Compute</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:85%"></span><em>85%</em></span>
+        </div>
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">Machine Learning</span>
+          <span class="skill-cat" role="cell">Modeling &amp; Prediction</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:88%"></span><em>88%</em></span>
+        </div>
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">Tableau</span>
+          <span class="skill-cat" role="cell">Data Visualization</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:87%"></span><em>87%</em></span>
+        </div>
+        <div class="skill-row" role="row">
+          <span class="skill-name" role="cell">ICT Fundamentals</span>
+          <span class="skill-cat" role="cell">Systems &amp; Infrastructure</span>
+          <span class="skill-bar" role="cell"><span class="skill-bar__fill" style="--pct:80%"></span><em>80%</em></span>
+        </div>
+        <!-- EDIT ME: adjust proficiency percentages honestly, add/remove rows for your real toolset (e.g. Power BI, R, AWS, Docker) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 03 LOAD / PROJECTS ===================== -->
+  <section class="section" id="load">
+    <div class="section__inner">
+      <div class="section__head">
+        <span class="stage-tag">03 · LOAD</span>
+        <h2>Shipped into production.</h2>
+        <p class="section__lede">A few runs from the job history — replace with your real projects.</p>
+      </div>
+
+      <div class="job-grid">
+
+        <article class="job-card">
+          <div class="job-card__top">
+            <span class="job-status job-status--success">SUCCESS</span>
+            <span class="job-runtime">runtime: 3.2 weeks</span>
+          </div>
+          <h3>Customer Churn Prediction Model</h3>
+          <p>
+            Built a machine learning pipeline to predict customer churn from behavioral and
+            transactional data, improving retention targeting.
+            <!-- EDIT ME: real dataset, model type, accuracy/AUC, business impact -->
+          </p>
+          <ul class="job-tags">
+            <li>Python</li><li>Scikit-learn</li><li>SQL</li>
+          </ul>
+          <a class="job-link" href="#" aria-label="View project (placeholder link)">view repo →</a>
+        </article>
+
+        <article class="job-card">
+          <div class="job-card__top">
+            <span class="job-status job-status--success">SUCCESS</span>
+            <span class="job-runtime">runtime: 5.0 weeks</span>
+          </div>
+          <h3>Large-Scale Log Processing with PySpark</h3>
+          <p>
+            Processed millions of event logs using distributed Spark jobs to surface usage patterns
+            for the product team.
+            <!-- EDIT ME: real scale (rows/TB), cluster setup, outcome -->
+          </p>
+          <ul class="job-tags">
+            <li>PySpark</li><li>Hadoop/Spark cluster</li><li>Python</li>
+          </ul>
+          <a class="job-link" href="#" aria-label="View project (placeholder link)">view repo →</a>
+        </article>
+
+        <article class="job-card">
+          <div class="job-card__top">
+            <span class="job-status job-status--success">SUCCESS</span>
+            <span class="job-runtime">runtime: 2.5 weeks</span>
+          </div>
+          <h3>Executive Sales Dashboard</h3>
+          <p>
+            Designed an interactive Tableau dashboard giving leadership a real-time view of sales
+            performance across regions.
+            <!-- EDIT ME: real client/company, metrics tracked, link to published viz -->
+          </p>
+          <ul class="job-tags">
+            <li>Tableau</li><li>SQL</li><li>Data Modeling</li>
+          </ul>
+          <a class="job-link" href="#" aria-label="View project (placeholder link)">view dashboard →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 04 VISUALIZE ===================== -->
+  <section class="section section--alt" id="visualize">
+    <div class="section__inner section__inner--split">
+      <div class="section__head">
+        <span class="stage-tag">04 · VISUALIZE</span>
+        <h2>Numbers people can actually read.</h2>
+        <p class="section__lede">
+          Tableau is where analysis becomes something a room full of stakeholders can act on in
+          five seconds.
+        </p>
+        <p>
+          <!-- EDIT ME: replace this chart with a real embedded Tableau Public viz.
+               Tableau Public gives you an <iframe> embed code — paste it here in place
+               of the .chart-mock block below. -->
+          Below is a placeholder chart standing in for an embedded Tableau view.
+        </p>
+      </div>
+
+      <div class="chart-mock" aria-label="Placeholder bar and trend chart illustrating data visualization work">
+        <svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg">
+          <line x1="30" y1="10" x2="30" y2="200" class="chart-axis"></line>
+          <line x1="30" y1="200" x2="410" y2="200" class="chart-axis"></line>
+          <rect x="55"  y="120" width="34" height="80" class="chart-bar"></rect>
+          <rect x="110" y="90"  width="34" height="110" class="chart-bar"></rect>
+          <rect x="165" y="140" width="34" height="60" class="chart-bar"></rect>
+          <rect x="220" y="60"  width="34" height="140" class="chart-bar"></rect>
+          <rect x="275" y="100" width="34" height="100" class="chart-bar"></rect>
+          <rect x="330" y="45"  width="34" height="155" class="chart-bar"></rect>
+          <polyline points="72,150 127,110 182,160 237,80 292,120 347,55" class="chart-trend"></polyline>
+          <circle cx="72" cy="150" r="4" class="chart-dot"></circle>
+          <circle cx="127" cy="110" r="4" class="chart-dot"></circle>
+          <circle cx="182" cy="160" r="4" class="chart-dot"></circle>
+          <circle cx="237" cy="80" r="4" class="chart-dot"></circle>
+          <circle cx="292" cy="120" r="4" class="chart-dot"></circle>
+          <circle cx="347" cy="55" r="4" class="chart-dot"></circle>
+        </svg>
+        <p class="chart-caption">Q1–Q6 sample trend · replace with live Tableau embed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 05 CONNECT ===================== -->
+  <section class="section connect" id="connect">
+    <div class="section__inner">
+      <div class="section__head section__head--center">
+        <span class="stage-tag">05 · CONNECT</span>
+        <h2>Run the contact query.</h2>
+        <p class="section__lede">Open to data science roles, freelance analysis, and collaborations.</p>
+      </div>
+
+      <div class="connect-terminal">
+        <p class="line"><span class="prompt">$</span> cat contact.json</p>
+        <pre class="connect-json"><span class="brace">{</span>
+  <span class="key">"email"</span>: <span class="str">"dalmasotieno440@gmail.com"</span>, <!-- EDIT ME -->
+  <span class="key">"phone"</span>: <span class="str">"+254 7XX XXX XXX"</span>, <!-- EDIT ME -->
+  <span class="key">"linkedin"</span>: <span class="str">"linkedin.com/in/your-handle"</span>, <!-- EDIT ME -->
+  <span class="key">"github"</span>: <span class="str">"github.com/your-handle"</span>, <!-- EDIT ME -->
+  <span class="key">"status"</span>: <span class="str">"available"</span>
+<span class="brace">}</span></pre>
+      </div>
+
+      <div class="connect-links">
+        <a href="mailto:dalmasotieno440@gmail.com?subject=Contact%20Request&body=Hi%20Dalmas%2C%0A%0AI%27d%20like%20to%20connect%20about%20your%20data%20science%20work.%0A" aria-label="Email Dalmas Otieno" class="btn btn--primary">Email me</a>
+        <a href="#" class="btn btn--ghost">LinkedIn</a>
+        <a href="#" class="btn btn--ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Dalmas Otieno Owino · built with HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
